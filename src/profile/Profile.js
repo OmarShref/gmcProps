@@ -3,6 +3,7 @@ const Profile = (props) => {
   let { fullName, bio, profession, handleName } = props;
   return (
     <div>
+      <img src={props.children} alt="profile pic" />
       <p>{fullName}</p>
       <p>{bio}</p>
       <p>{profession}</p>
