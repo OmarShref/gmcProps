@@ -3,7 +3,7 @@ import Profile from "./profile/Profile";
 import profilePicture from "./299307594_142085175233459_4813057762078205252_n.jpg";
 
 function App() {
-  const handleClick = (e) => {
+  const handleName = (e) => {
     alert(e);
   };
   return (
@@ -12,7 +12,7 @@ function App() {
         fullName={"Omar Sharif"}
         bio={"i`m here"}
         profession={"Developer"}
-        handleName={handleClick}
+        handleName={handleName}
       >
         {profilePicture}
       </Profile>

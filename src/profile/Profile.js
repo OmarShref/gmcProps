@@ -7,7 +7,7 @@ const Profile = (props) => {
       <p>{fullName}</p>
       <p>{bio}</p>
       <p>{profession}</p>
-      <button onClick={handleName(fullName)}>Click me!</button>
+      <button onClick={() => handleName(fullName)}>Click me!</button>
     </div>
   );
 };
@@ -15,7 +15,9 @@ Profile.deafaultProps = {
   fullName: "Omar Sharif Zaki",
   bio: "I`m developer",
   profession: "Front-End developer",
-  handleName: () => alert("No name found"),
+  handleName: (e) => {
+    alert(e);
+  },
 };
 Profile.propTypes = {
   fullName: PropTypes.string,
